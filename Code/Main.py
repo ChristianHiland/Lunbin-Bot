@@ -15,6 +15,9 @@ client = commands.Bot(command_prefix="$") # '$' is the prefix tha the user will 
 @client.event
 async def on_ready():
 	print("Lunbin Bot is online!")
+	print("Bot is running on:\n")
+	print("Platform System: {platform.system()}  Platform Release: {platform.release()}  OS Name: ({os.name})")
+	print("-------------------")
 
 @client.command()
 async def ping(ctx):
